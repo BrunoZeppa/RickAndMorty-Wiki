@@ -23,8 +23,10 @@ const Residents = ({ residentsUrl }) => {
     const dotColor = (color) => {
         if (color == 'Dead') {
             return 'red';
-        } else {
+        } if( color == 'Alive'){
             return 'green'
+        }else{
+            return 'purple'
         }
     }
 
