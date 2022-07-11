@@ -14,7 +14,7 @@ const Locations = () => {
             .then(res => setPlaces(res.data));
     };
     const noResidents = () => {
-        if(residents.length === 0)
+        if(residents?.length === 0)
         return "this place seems to be with no residents"
     }
 
