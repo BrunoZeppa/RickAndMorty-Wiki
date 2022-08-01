@@ -10,30 +10,30 @@ const Residents = ({ residentsUrl }) => {
     useEffect(() => {
         axios.get(residentsUrl)
             .then(res => setResidentData(res.data))
-
     }, [])
 
-    let name = residentData?.name
-    let image = residentData.image
-    let status = residentData.status
-    let origin = residentData.origin?.name
-    let episodes = residentData.episode?.length
-    let specie = residentData.species
+    const name = residentData?.name
+    const image = residentData.image
+    const status = residentData.status
+    const origin = residentData.origin?.name
+    const episodes = residentData.episode?.length
+    const specie = residentData.species
 
     const dotColor = (color) => {
         if (color == 'Dead') {
             return 'red';
         } if( color == 'Alive'){
-            return 'green'
+            return 'yellowgreen'
         }else{
             return 'purple'
         }
     }
 
+
     console.log(residentData)
 
     return (
-        <div className='resident-card'>
+        <article className='resident-card'>
             <img src={image} alt="" />
             <div className='resident-info'>
                 <h2>{name}</h2>
@@ -46,7 +46,7 @@ const Residents = ({ residentsUrl }) => {
                 <small>episodes where apper</small>
                 <p>{episodes}</p>
             </div>
-        </div>
+        </article>
     );
 };
 
