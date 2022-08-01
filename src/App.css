@@ -424,11 +424,7 @@ footer #finall-button {
 }
 @media screen and (min-height: 667px){
   header section {
-    background-color: #06353c;
-    width: 60%;
-    position: absolute;
     margin-top: 308px;
-    border-radius: 5px;
   }
   
 }
