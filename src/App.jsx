@@ -86,7 +86,7 @@ function App() {
 
   const noResidents = (residentsLenght) =>{
     if(residentsLenght == 0){
-      return "Hmm.. Seems to be empty this place!"
+      return "Hmm.. this place seems to be empty "
     }
 
   }
